@@ -1,0 +1,587 @@
+:root {
+    --bcg-color: #252B42;
+    --light-text-color: #fff;
+    --second-text-color: #737373;
+    --primary-color: #23A6F0;
+    --light-bcg-color: #fff;
+    --text-color: #252B42;
+}
+
+*{
+    box-sizing: border-box;
+    color: var(--light-text-color);
+    font-family: 'Montserrat';
+    margin: 0px;
+}
+
+body {
+    background: var(--bcg-color);
+}
+
+.content_block {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_container {
+    width: 1048px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.label > p {
+    text-align: center;
+}
+
+#F1Container {
+    padding: 92px 0px 80px 0px; 
+}
+
+#FeaturesContainer {
+    padding: 140px 0px 40px 0px;
+}
+
+#TestimonialsContainer {
+    padding: 112px 0px;
+}
+
+#AppContainer {
+    padding: 80px 0px;
+}
+
+#PriceContainer {
+    padding: 160px 0px;
+}
+
+#ContactContainer {
+    padding: 100px 0px 134px 0px;
+}
+
+#FeaturesContent {
+    margin-top: 68px;
+}
+
+#TestimonialsContent {
+    margin-top: 80px;
+}
+
+#AppContent {
+    margin-top: 50px;
+}
+
+#PriceContent {
+    margin-top: 96px;
+}
+
+#ContactContent {
+    margin-top: 150px;
+}
+
+header {
+    width: 100vw;
+    height: 92px;
+
+    margin-left: calc(50% - 1320px/2);
+    padding-left: 136px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+}
+
+#BrandName > i {
+    display: none;
+}
+
+#Navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+#Menu {
+    width: 280px;
+    margin-left: 84px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Menu > a {
+    text-decoration: none;
+}
+
+#Authorization {
+    width: 300px;
+    margin-left: 200px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 14px;
+}
+
+#Authorization > div > a {
+    text-decoration: none;
+}
+
+#Authorization > div > button {
+    width: 216px;
+    height: 52px;
+    padding: 16px 24px;
+    background-color: var(--primary-color);
+
+    border: 0px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#V1 {
+    position: absolute;
+    right: 200px;
+    top: 220px;
+    z-index: -1;
+}
+
+#V2 {
+    position: absolute;
+    right: 210px;
+    top: 216px;
+    z-index: -2;
+}
+
+#V3 {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    z-index: -1;
+}
+
+#F1content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Assistance {
+    width: 508px;
+    margin-right: 48px;
+}
+
+#Assistance > h4 {
+    width: 376px;
+    height: 60px;
+    margin: 36px 0px;
+}
+
+.btn1 {
+    width: 184px;
+    height: 52px;
+    background-color: var(--primary-color);
+    border: 0px;
+    border-radius: 26px;
+    margin-right: 10px;
+}
+
+.btn2 {
+    width: 152px;
+    height: 52px;
+    background-color: var(--bcg-color);
+    border: 1px solid var(--light-text-color);
+    border-radius: 26px;
+}
+
+#FeaturesContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.ContentBlock {
+    width: 328px;
+    height: 140px;
+    padding-top: 35px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.ContentBlock > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 280px;
+}
+
+.ContentBlock > div > div {
+    width: 212px;
+}
+
+.ContentBlock > div > div > p {
+    margin: 4px 0px 0px 0px;
+}
+
+#TestimonialsCard {
+    width: 744px;
+    height: 360px;
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-bcg-color);
+    color: var(--second-text-color);
+}
+
+#TestimonialsCard > img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 30px;
+}
+
+#TestimonialsCard > p {
+    color: var(--second-text-color);
+    text-align: center;
+    width: 436px;
+}
+#TestimonialsCard > h6 {
+    color: var(--second-text-color);
+    text-align: center;
+}
+#TestimonialsCard > h3 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#Stars {
+    width: 132px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+#AppContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.AppCard {
+    height: 80px;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 18px 28px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.AppCard > i {
+    font-size: 38px;
+    margin-right: 24px;
+}
+
+.AppCard > div > p {
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PriceContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.PriceCard {
+    width: 508px;
+    height: 244px;
+    padding: 50px;
+    border: 1px solid #23A6F0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-bcg-color);
+}
+
+.PriceCardElement {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.PriceCardElement > h3 {
+    color: var(--primary-color);
+}
+.PriceCardElement > p {
+    color: var(--second-text-color);
+    line-height: 24px;
+}
+
+.PriceCardElement > button {
+    padding: 16px 40px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    border: 0px;
+}
+
+.PriceCardElement > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.PriceCardElement > div > h2{
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.PriceCardElement > div > div > h6{
+    color: #8EC2F2;
+}
+
+.PriceCardElement > div > div > h5{
+    color: var(--primary-color);
+}
+
+
+.PriceCard > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.PriceCard > div > p {
+    width: 216px;
+}
+
+#Cover {
+    width: 100%;
+    height: 416px;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    background: #FAFAFA;
+}
+
+#ContactLabel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 328px;
+}
+
+#ContactLabel > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    width: 456px;
+}
+
+#ContactCard {
+    width: 880px;
+    height: 610px;
+    background-color: var(--light-bcg-color);
+    display: flex;
+    flex-direction: row;
+}
+
+#ContactForm {
+    width: 100%;
+    height: 100%;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+#ContactForm * {
+    color: var(--text-color);
+}
+
+#ContactForm > h3 {
+    text-align: center;
+}
+
+#ContactForm > button {
+    height: 52px;
+    background-color: var(--primary-color);
+    border: 0px;
+    border-radius: 5px;
+    color: var(--light-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#InputForm {
+    width: 510px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#InputForm > div {
+    width: 100%;
+}
+
+#InputForm > div > h6 {
+    margin-bottom: 10px;
+}
+
+.text-field__input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+}
+
+.text-field__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+}
+
+#FooterContainer {
+    width: 1048px;
+    display: grid;
+    padding: 80px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.FooterLinks > div{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    
+    grid-gap: 25px;
+}
+
+.FooterLinks > div > div > a > i{
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-right: 22px;
+}
+
+.FooterBottom {
+    width: 100%;
+    height: 76px;
+    background: #FAFAFA;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.FooterElement {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.FooterElement > div > a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.FooterElement > div {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 58px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
