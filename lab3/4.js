@@ -7,8 +7,17 @@
  * как считать: (3 + 6 + 4 + 2) * 2
  */
 
-function prettySum(arr) {
-    // code here
+ function prettySum(arr) {
+
+    let sum = 0
+
+    for (let i = 0; i < arr.length; i+=2) {
+
+        sum += arr[i]
+    }
+
+    return sum * arr[arr.length - 1]
 }
 
-module.exports = prettySum;
+
+module.exports = prettySum
