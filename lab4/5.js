@@ -11,7 +11,15 @@
  */
 
 function checkBrackets(str) {
-    //code here
+    
+    while (str.includes('[]') || str.includes('()') || str.includes('<>')) {
+        str = str.replaceAll('[]', '')
+        str = str.replaceAll('()', '')
+        str = str.replaceAll('<>', '')
+    }
+
+    if (str) return false
+    else return true
 }
 
 module.exports = checkBrackets;
