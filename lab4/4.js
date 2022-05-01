@@ -17,7 +17,20 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let res = []
+
+    let unpack = (a) => {
+        if (typeof(a) == typeof([])) {
+            for (const element of a) {
+                unpack(element)
+            }
+        }
+        else res.push(a)
+    }
+    
+    unpack(arr)
+
+    return res
 }
 
 module.exports = get1DArray;
